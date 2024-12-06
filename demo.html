@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> portfolio</title>
+</head>
+<style>
+    body {
+        background-color: rgb(2, 2, 45);
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        background-color: rgb(8, 8, 74);
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        display: inline;
+        justify-content: center;
+        margin: 0 23px;
+        
+        
+
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    nav ul li a:hover{
+        color: rgb(129, 129, 232);
+        font-size: 1.3rem;
+    }
+    
+
+    .first {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px;
+        
+        
+
+    }
+    .first div{
+        width: 50%;
+    }
+    .leftsection {
+    font-size: 2.5rem;
+    width: 80%;
+    margin: 50px 0;
+        
+        
+    }
+    .rightsection img{
+        
+        width: 59%;
+        margin:50px 0;
+        
+    }
+    .p{
+        color: rgb(146, 81, 207);
+    }
+    #element{
+        color: rgb(146, 81, 207);
+    }
+    hr{
+        height: 2px;
+    }
+    .second{
+        height: 150px;
+        font-size: 1.5rem;
+        padding: 150px;
+        margin: 150px;
+         /* background-color: rgb(4, 52, 52); */
+        
+    }
+    .third
+    {   height: 150px;
+        padding: 150px;
+        margin: 150px;
+        /* background-color: aquamarine; */
+        display: flex;
+    }
+    .box{
+        height: 200px;
+        width: 220px;
+        border: 3px solid white;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+
+
+    }
+   .box:hover{
+    box-shadow: 15px 12px 17px 12px slategrey;
+   }
+    
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Sravani's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">project</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first" id="home">
+            <div class="leftsection">Hello!! <span class="p">I'm Sravani</span>
+            <div>i am a passionate</div>
+            
+            <span id="element"></span>
+            </div>
+            <div class="rightsection"><img src="a.png" alt=""></div>
+            <hr>
+        </section>
+        <section class="second" id="about">
+            <div class="secondleft">i'm Sravani</div> 
+            <div class="secondright">Aspiring Full Stack Developer | MERN Enthusiast.</div>
+           
+        </section>
+        <section class="third" id="project">
+            <div class="box"><b>PROJECT 1</b></div>
+            <div class="box"><b>PROJECT 2</b></div>
+            <div class="box"><b>PROJECT 3</b></div>
+
+        </section>
+    </main>
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['WEB DEVELOPER'],
+      typeSpeed: 50,
+    });
+  </script>
+</html>
